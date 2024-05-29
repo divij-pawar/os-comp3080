@@ -13,7 +13,7 @@ void runner(int value) {
 	#pragma omp critical
 		{
 			sum += value;
-			cout << "In runner: value == " value
+			cout << "In runner: value == " << value
 			<< ", number of threads == " << omp_get_num_threads()
 			<< ", my thread num == " << omp_get_thread_num()
 			<< endl;
